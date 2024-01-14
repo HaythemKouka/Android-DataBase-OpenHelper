@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/i1"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="20px"
+
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:id="@+id/nom"
+        app:layout_constraintTop_toBottomOf="@id/i1"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Le Nom"
+        android:layout_margin="20px"
+        android:id="@+id/nomE"
+        app:layout_constraintStart_toEndOf="@id/nom"
+        app:layout_constraintBaseline_toBaselineOf="@id/nom"
+        />
+
+    <TextView
+        android:layout_margin="20px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pnom"
+        app:layout_constraintTop_toBottomOf="@id/nom"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pnomE"
+        android:layout_margin="20px"
+        android:hint="Le Prenom"
+        app:layout_constraintStart_toEndOf="@id/nomE"
+        app:layout_constraintBaseline_toBaselineOf="@id/pnom"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:id="@+id/moyenne"
+        app:layout_constraintTop_toBottomOf="@id/pnom"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_margin="20px"
+        android:layout_height="wrap_content"
+        android:id="@+id/moyenneE"
+        android:hint="La Moyenne"
+        app:layout_constraintStart_toEndOf="@id/pnomE"
+        app:layout_constraintBaseline_toBaselineOf="@id/moyenne"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add"
+        android:id="@+id/Add"
+        app:layout_constraintTop_toBottomOf="@id/moyenneE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
